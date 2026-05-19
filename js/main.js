@@ -6,8 +6,8 @@ const navDrawer = document.getElementById('navDrawer');
 
 window.addEventListener('scroll', () => {
   const y = scrollY;
-  nav.classList.toggle('scrolled', y > 40);
-  backTop.classList.toggle('vis', y > 600);
+  nav?.classList.toggle('scrolled', y > 40);
+  backTop?.classList.toggle('vis', y > 600);
   const docH = document.documentElement.scrollHeight - innerHeight;
   if (scrollProgress && docH > 0) {
     scrollProgress.style.width = `${(y / docH) * 100}%`;
