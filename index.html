@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Photomaton · Infrastructure Biométrique de Confiance</title>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nlogo">
+    <svg width="180" height="36" viewBox="0 0 360 66" fill="none">
+      <text x="0" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="#FFFFFF" letter-spacing="-1">Photomaton</text>
+      <text x="258" y="40" font-family="-apple-system,sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">®</text>
+      <rect x="278" y="6" width="2.5" height="50" rx="1.25" fill="#009CDD"/>
+      <path d="M288 54V12L306 36L324 12V54" stroke="white" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M332 12H350M332 33H348M332 54H350" stroke="white" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+  <div class="nlinks">
+    <a onclick="sc('#paradigm')">Vision</a>
+    <a onclick="sc('#process')">Processus</a>
+    <a onclick="sc('#kiscam')">KIS CAM</a>
+    <a onclick="sc('#certifications')">Certifications</a>
+    <a onclick="sc('#usages')">Cas d'usage</a>
+  </div>
+  <button class="ncta" onclick="om('demo')">Demander une démo</button>
+</nav>
+
+<div class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-scan"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><span class="hero-dot"></span>Infrastructure Biométrique · Souveraineté Européenne</div>
+    <h1>De la photo à la<br/><span>donnée biométrique</span><br/>de confiance</h1>
+    <div class="hero-claim">Nous ne demandons pas votre confiance. Nous la prouvons.</div>
+    <p class="hero-sub">ME Group transforme la capture d'identité en une <strong>infrastructure biométrique sécurisée, certifiée et déployable à grande échelle</strong> pour les gouvernements — déjà opérationnelle en Europe.</p>
+    <div class="hero-btns">
+      <button class="btn-orange" onclick="om('demo')">Demander une démonstration</button>
+      <button class="btn-ghost" onclick="om('docs')">Télécharger la documentation ↓</button>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <div class="hstat"><div class="hstat-n">30 000<sup>+</sup></div><div class="hstat-l">Équipements déployés</div></div>
+    <div class="hstat"><div class="hstat-n">10M<sup>+</sup></div><div class="hstat-l">Captures sécurisées / an</div></div>
+    <div class="hstat"><div class="hstat-n">20<sup>+</sup></div><div class="hstat-l">Pays</div></div>
+    <div class="hstat"><div class="hstat-n">PAD<sup> N3</sup></div><div class="hstat-l">Anti-spoofing certifié</div></div>
+  </div>
+</div>
+<!-- PARADIGME -->
+<section class="paradigm" id="paradigm">
+  <div class="sec-inner">
+    <div class="sec-tag">Un nouveau paradigme</div>
+    <h2 class="sec-h">L'identité n'est plus une photo.<br/>C'est une <em>donnée biométrique</em>.</h2>
+    <div class="paradigm-layout">
+      <div class="ptext">
+        <p>La photographie d'identité n'est plus une simple image. Elle est devenue un <strong>actif biométrique critique</strong>, au cœur des systèmes d'identité physique et numérique.</p>
+        <p>Dans ce nouveau paradigme, la question n'est plus : <strong>« Qui prend la photo ? »</strong><br/>Mais : <strong>« Qui contrôle la capture ? »</strong></p>
+        <div class="pquote">La réponse de ME Group est claire : une infrastructure capable de garantir une <em>capture biométrique fiable, sécurisée et certifiée à grande échelle</em>.</div>
+        <p>Les gouvernements font face aux attaques deepfake, à la fraude par morphing et aux exigences réglementaires croissantes. Ils ont besoin d'un partenaire stratégique — pas seulement d'un fournisseur.</p>
+      </div>
+      <div class="pvis">
+        <div class="pv-row"><div class="pv-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="pv-label">Menaces identifiées</div><div class="pv-val">Deepfake · Morphing · Spoofing</div></div></div>
+        <div class="pv-row"><div class="pv-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div><div class="pv-label">Exigences réglementaires</div><div class="pv-val">ICAO · eIDAS 2 · ISO · RGPD</div></div></div>
+        <div class="pv-row"><div class="pv-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20"/></svg></div><div><div class="pv-label">Déploiement identité numérique</div><div class="pv-val">EUDI Wallet · eIDAS 2 · 2026</div></div></div>
+        <div class="pv-row" style="border-bottom:none"><div class="pv-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="pv-label">Réponse ME Group</div><div class="pv-val">Infrastructure de capture certifiée</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+  <div class="sec-inner">
+    <div class="sec-tag">Notre vision</div>
+    <h2 class="sec-h">Une infrastructure de confiance pour<br/><em>l'enrôlement biométrique</em></h2>
+    <div class="vision-top">
+      <div class="vision-lead">ME Group ne capture pas des photos. Nous produisons des données biométriques exploitables, sécurisées et vérifiables — à l'échelle nationale.</div>
+      <div class="vision-body">
+        <p>Grâce à une maîtrise complète de la chaîne — du hardware au software — nous permettons aux États de sécuriser l'enrôlement des citoyens, lutter efficacement contre la fraude identitaire, garantir la conformité réglementaire et préparer l'intégration à l'identité numérique.</p>
+        <p><strong>ME Group est le pont entre l'identité physique et l'identité numérique.</strong></p>
+      </div>
+    </div>
+    <div class="vision-cards">
+      <div class="vc"><div class="vc-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="vc-title">Enrôlement sécurisé</div><div class="vc-body">Capture biométrique contrôlée de bout en bout pour chaque citoyen.</div></div>
+      <div class="vc"><div class="vc-icon"><svg viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/></svg></div><div class="vc-title">Prévention de la fraude</div><div class="vc-body">Anti-spoofing certifié et détection du vivant au point de capture.</div></div>
+      <div class="vc"><div class="vc-icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div><div class="vc-title">Conformité réglementaire</div><div class="vc-body">ICAO, ISO, eIDAS 2 — intégrés, auditables, durables.</div></div>
+      <div class="vc"><div class="vc-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><div class="vc-title">Prêt pour l'identité numérique</div><div class="vc-body">Infrastructure d'enrôlement compatible EUDI Wallet dès aujourd'hui.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSUS -->
+<section class="process" id="process">
+  <div class="sec-inner">
+    <div class="sec-tag">Comment ça fonctionne</div>
+    <h2 class="sec-h" style="color:#fff">Un processus de capture biométrique<br/>entièrement maîtrisé</h2>
+    <div class="process-claim">La sécurité commence à la capture.</div>
+    <div class="ptrack" id="ptracks">
+      <div class="pstep"><div class="pstep-num"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="pstep-title">Capture intelligente</div><div class="pstep-body">Détection automatique du visage, ajustement temps réel, environnement contrôlé.</div><div class="pstep-tags"><span class="ptag">Auto-cadrage</span><span class="ptag">Qualité ICAO</span></div></div>
+      <div class="pstep"><div class="pstep-num"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div><div class="pstep-title">Vérification biométrique</div><div class="pstep-body">Contrôle de conformité, détection du vivant, anti-spoofing certifié.</div><div class="pstep-tags"><span class="ptag">PAD Niveau 3</span><span class="ptag">Anti-deepfake</span></div></div>
+      <div class="pstep"><div class="pstep-num"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div class="pstep-title">Chiffrement sécurisé</div><div class="pstep-body">Données chiffrées dès la capture, identifiant unique généré instantanément.</div><div class="pstep-tags"><span class="ptag">AES-256</span><span class="ptag">Edge computing</span></div></div>
+      <div class="pstep"><div class="pstep-num"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19 19 0 013.07 11.5a19.79 19.79 0 01-3-8.59A2 2 0 012.06 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div><div class="pstep-title">Transmission de confiance</div><div class="pstep-body">Transfert sécurisé vers les systèmes gouvernementaux avec traçabilité complète.</div><div class="pstep-tags"><span class="ptag">API / SI</span><span class="ptag">Audit complet</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- KIS CAM -->
+<section id="kiscam">
+  <div class="sec-inner">
+    <div class="sec-tag org">Technologie propriétaire</div>
+    <h2 class="sec-h">KIS CAM — <span class="eo">Le cœur de l'infrastructure</span></h2>
+    <div class="kiscam-layout">
+      <div class="kiscam-device">
+        <div class="kd-label">Unité de capture biométrique</div>
+        <div class="kd-body">
+          <div class="kd-lens"><div class="kd-lens-inner"></div></div>
+          <div class="kd-screen"><svg viewBox="0 0 48 32"><rect x="2" y="2" width="44" height="28" rx="3" stroke-width="2"/><circle cx="24" cy="16" r="6" stroke-width="1.5"/><line x1="2" y1="24" x2="46" y2="24" stroke-width="1"/></svg></div>
+        </div>
+        <div class="kd-name">KIS CAM</div>
+        <div class="kd-tags"><span class="kd-tag">ICAO</span><span class="kd-tag">PAD N3</span><span class="kd-tag">AES-256</span></div>
+        <div class="kd-metrics">
+          <div class="kd-metric"><div class="kd-metric-n">&lt; 2s</div><div class="kd-metric-l">Temps capture</div></div>
+          <div class="kd-metric"><div class="kd-metric-n">98,4%</div><div class="kd-metric-l">Conformité 1re capture</div></div>
+          <div class="kd-metric"><div class="kd-metric-n">&lt;0,5%</div><div class="kd-metric-l">Taux APCER</div></div>
+          <div class="kd-metric"><div class="kd-metric-n">12 bits</div><div class="kd-metric-l">Profondeur image</div></div>
+        </div>
+      </div>
+      <div class="kiscam-specs">
+        <div class="kspec"><div class="kspec-label">Détection du vivant</div><div class="kspec-val">Traitement embarqué temps réel</div><div class="kspec-sub">Algorithme anti-spoofing sans dépendance réseau — aucune donnée brute exposée.</div></div>
+        <div class="kspec"><div class="kspec-label">Qualité image</div><div class="kspec-val">Conformité ICAO automatisée</div><div class="kspec-sub">Cadrage, éclairage, expression — validés avant déclenchement.</div></div>
+        <div class="kspec"><div class="kspec-label">Chiffrement</div><div class="kspec-val">AES-256 au niveau capteur</div><div class="kspec-sub">Aucune donnée non chiffrée ne quitte le dispositif sécurisé.</div></div>
+        <div class="kspec"><div class="kspec-label">Modularité</div><div class="kspec-val">Activation à la demande</div><div class="kspec-sub">Compatible avec toute la gamme Photomaton · Mises à jour automatiques à distance.</div></div>
+        <button class="btn-orange" style="margin-top:8px" onclick="om('demo')">Voir la KIS CAM en action →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH -->
+<section class="tech" id="tech">
+  <div class="sec-inner">
+    <div class="sec-tag">Maîtrise complète de la chaîne</div>
+    <h2 class="sec-h">Trois piliers de notre<br/><em>technologie biométrique</em></h2>
+    <div class="tech-grid">
+      <div class="tblock tblock-navy">
+        <div class="tblock-badge">Propriétaire</div>
+        <div class="tblock-num">01 · Hardware</div>
+        <div class="tblock-title">KIS CAM</div>
+        <div class="tblock-body">Technologie de capture propriétaire conçue pour les environnements d'identité critiques — non adaptée depuis du matériel grand public.</div>
+        <ul class="tblock-points">
+          <li>Chiffrement natif dès l'acquisition</li>
+          <li>Traitement embarqué — edge computing</li>
+          <li>Profondeur image 12 bits</li>
+          <li>Sortie qualité certifiée ICAO</li>
+        </ul>
+        <div class="tblock-cta" onclick="sc('#kiscam')">Explorer la KIS CAM →</div>
+      </div>
+      <div class="tblock">
+        <div class="tblock-num">02 · Sécurité active</div>
+        <div class="tblock-title">Anti-spoofing & détection du vivant</div>
+        <div class="tblock-body">Détection du vivant avancée intégrée directement dans le dispositif de capture — sans dépendance serveur pour les contrôles critiques.</div>
+        <ul class="tblock-points">
+          <li>Analyse 3D temps réel</li>
+          <li>Détection deepfake, écran, masque, morphing</li>
+          <li>Certification indépendante — niveau le plus élevé</li>
+          <li>APCER inférieur à 0,5 %</li>
+        </ul>
+        <div class="tblock-cta" onclick="om('docs')">Lire la documentation technique →</div>
+      </div>
+      <div class="tblock">
+        <div class="tblock-num">03 · Intégrité des données</div>
+        <div class="tblock-title">Unicité & traçabilité</div>
+        <div class="tblock-body">Chaque capture biométrique est non reproductible, entièrement traçable et liée cryptographiquement à son dispositif source.</div>
+        <ul class="tblock-points">
+          <li>Identifiant unique par capture</li>
+          <li>Horodatage et lien à la source</li>
+          <li>Piste d'audit signée cryptographiquement</li>
+          <li>Sortie biométrique non reproductible</li>
+        </ul>
+        <div class="tblock-cta" onclick="om('docs')">Télécharger les données de certification →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉSEAU -->
+<section id="network">
+  <div class="sec-inner">
+    <div class="network-layout">
+      <div class="net-stats">
+        <div class="nstat"><div class="nstat-n">30 000+</div><div class="nstat-l">Équipements déployés dans le monde</div></div>
+        <div class="nstat"><div class="nstat-n">10M+</div><div class="nstat-l">Captures sécurisées par an</div></div>
+        <div class="nstat"><div class="nstat-n">20+</div><div class="nstat-l">Pays</div></div>
+        <div class="nstat"><div class="nstat-n">300</div><div class="nstat-l">Techniciens terrain certifiés</div></div>
+      </div>
+      <div>
+        <div class="sec-tag">Réseau prêt à l'échelle</div>
+        <h2 class="sec-h">Un réseau biométrique<br/><em>déjà déployé</em></h2>
+        <div class="net-body">
+          <p>ME Group opère un <strong>réseau physique unique en Europe</strong> — des milliers de kiosques déjà installés, une présence terrain massive et une capacité de déploiement immédiate.</p>
+          <p>Notre technologie biométrique peut être <strong>activée à la demande</strong>, sans transformation lourde des infrastructures. Pas un projet futur — une solution opérationnelle aujourd'hui.</p>
+        </div>
+        <button class="btn-navy" onclick="om('pilot')"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Lancer un projet pilote</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certs" id="certifications">
+  <div class="sec-inner">
+    <div class="sec-tag">Conformité &amp; certifications</div>
+    <h2 class="sec-h">Certifié. Conforme. De confiance.</h2>
+    <div class="certs-grid">
+      <div class="cert"><div class="cert-badge">ICAO 9303</div><div class="cert-name">Documents de voyage</div><div class="cert-desc">Conformité totale pour passeports biométriques et titres de voyage internationaux</div></div>
+      <div class="cert"><div class="cert-badge">ISO/IEC 30107</div><div class="cert-name">Présentation Attack Detection</div><div class="cert-desc">Niveau 3 — résistance aux attaques de présentation les plus sophistiquées</div></div>
+      <div class="cert"><div class="cert-badge">ISO 29794</div><div class="cert-name">Qualité biométrique</div><div class="cert-desc">Qualité d'image faciale standardisée pour une identification fiable</div></div>
+      <div class="cert"><div class="cert-badge">eIDAS 2 / RGPD</div><div class="cert-name">Cadre réglementaire européen</div><div class="cert-desc">Données souveraines · Base légale documentée · Compatible EUDI Wallet</div></div>
+    </div>
+    <div class="certs-doc">
+      <div class="cd-text"><strong>Documentation technique disponible</strong>Rapports de conformité · Fiches techniques KIS CAM · Résultats APCER · Données de certification</div>
+      <button class="btn-white-sm" onclick="om('docs')">Accéder à la documentation →</button>
+    </div>
+  </div>
+</section>
+
+<!-- CITATIONS -->
+<section id="quotes">
+  <div class="sec-inner">
+    <div class="sec-tag">Perspectives d'experts</div>
+    <h2 class="sec-h">Ce que disent les décideurs<br/><em>de l'identité</em></h2>
+    <p style="font-size:15px;color:var(--muted);margin-top:12px;line-height:1.7;max-width:560px">Profils illustratifs — à remplacer par les témoignages réels de vos partenaires institutionnels.</p>
+    <div class="quotes-grid">
+      <div class="qcard">
+        <span class="qcard-mark">"</span>
+        <p class="qcard-text">La qualité de l'enrôlement biométrique à la source est le <em>facteur critique</em> qui détermine la fiabilité de toute la chaîne d'identité nationale. ME Group répond précisément à ce goulot d'étranglement.</p>
+        <div class="qcard-author">
+          <div class="qcard-avatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          <div>
+            <div class="qcard-name">Directeur Général</div>
+            <div class="qcard-role">Agence nationale d'identité<br/>État membre européen</div>
+            <div class="qcard-placeholder">Profil illustratif</div>
+          </div>
+        </div>
+      </div>
+      <div class="qcard">
+        <span class="qcard-mark">"</span>
+        <p class="qcard-text">Ce qui nous a convaincus, c'est la <em>maîtrise de bout en bout</em> de la chaîne. Du capteur KIS CAM à la transmission chiffrée — chaque maillon est contrôlé, certifié, auditable. C'est rare.</p>
+        <div class="qcard-author">
+          <div class="qcard-avatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          <div>
+            <div class="qcard-name">Responsable de la Sécurité des SI</div>
+            <div class="qcard-role">Ministère de l'Intérieur<br/>Direction des systèmes d'information</div>
+            <div class="qcard-placeholder">Profil illustratif</div>
+          </div>
+        </div>
+      </div>
+      <div class="qcard">
+        <span class="qcard-mark">"</span>
+        <p class="qcard-text">Le déploiement a été <em>remarquablement fluide</em>. Les citoyens n'ont rien remarqué. Nos agents n'ont eu besoin d'aucune formation spécifique. Et les taux de rejet ont chuté de plus de 60 %.</p>
+        <div class="qcard-author">
+          <div class="qcard-avatar"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+          <div>
+            <div class="qcard-name">Responsable des services aux usagers</div>
+            <div class="qcard-role">Préfecture régionale<br/>Unité titres &amp; identité</div>
+            <div class="qcard-placeholder">Profil illustratif</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAS D'USAGE -->
+<section class="usages" id="usages">
+  <div class="sec-inner">
+    <div class="sec-tag">Cas d'usage</div>
+    <h2 class="sec-h">Une réponse adaptée à<br/><em>chaque acteur</em></h2>
+    <p style="font-size:15px;color:var(--muted);margin-top:12px;line-height:1.7;max-width:560px">Un socle technique commun, des réponses différenciées. Chaque acteur de la chaîne identité trouve ses preuves, ses arguments, son niveau de lecture.</p>
+    <div class="utabs">
+      <button class="utab active" onclick="switchTab(0)">Décideurs publics</button>
+      <button class="utab" onclick="switchTab(1)">Experts techniques</button>
+      <button class="utab" onclick="switchTab(2)">Opérationnels terrain</button>
+      <button class="utab" onclick="switchTab(3)">Écosystème européen</button>
+    </div>
+    <div class="upanel active" id="tab0">
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="uf-title">Réduction de la fraude — mesurable</div></div><div class="uf-body">Anti-spoofing certifié PAD Niveau 3, détection deepfake et morphing. APCER inférieur à 0,5 % — auditable et démontrable auprès de tout organe de contrôle.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20"/></svg></div><div class="uf-title">Souveraineté &amp; conformité RGPD</div></div><div class="uf-body">Infrastructure européenne, hébergement souverain, traçabilité complète des flux. Conformité réglementaire immédiate et durable, sans dépendance extra-européenne.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="uf-title">Opérationnel dès aujourd'hui</div></div><div class="uf-body">30 000+ dispositifs actifs. Aucun investissement infrastructure préalable. Pilote en 60 jours, déploiement national en quelques mois. Réf. France Titres, ANTS.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><div class="uf-title">Vision long terme EUDI Wallet</div></div><div class="uf-body">Compatibilité native eIDAS 2. Positionnement comme brique d'enrôlement du portefeuille d'identité numérique européen dès 2026.</div></div>
+    </div>
+    <div class="upanel" id="tab1">
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="uf-title">Architecture hardware + software</div></div><div class="uf-body">Edge computing embarqué : traitement anti-spoofing local, sans dépendance réseau pour les contrôles critiques. Surface d'attaque réduite au minimum.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="uf-title">API &amp; interopérabilité</div></div><div class="uf-body">API REST documentées, connecteurs vers les principaux SI gouvernementaux. Intégration dans les architectures existantes sans refonte préalable.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div class="uf-title">Chiffrement AES-256 natif</div></div><div class="uf-body">Données chiffrées dès le capteur. Chaîne de confiance cryptographique complète. Piste d'audit signée cryptographiquement par capture.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div><div class="uf-title">Performances mesurées</div></div><div class="uf-body">APCER &lt; 0,5 %, BPCER documenté par organisme tiers indépendant. Métriques ISO 30107-3 disponibles dans la documentation technique.</div></div>
+    </div>
+    <div class="upanel" id="tab2">
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div><div class="uf-title">Parcours citoyen quasi inchangé</div></div><div class="uf-body">L'usager retrouve un parcours familier. Les contrôles biométriques s'effectuent de façon transparente. Aucune formation spécifique requise côté agent.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="uf-title">98,4 % de conformité à 1re capture</div></div><div class="uf-body">Le guidage automatique garantit la conformité dès la première tentative. Réduction drastique des rejets et des allers-retours administratifs.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><div class="uf-title">300 techniciens certifiés</div></div><div class="uf-body">Réseau national de techniciens certifiés. Télémétrie temps réel, maintenance préventive, intervention sous 24h. SLA adaptés aux exigences des services publics.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="uf-title">Infrastructure déjà présente</div></div><div class="uf-body">Les kiosques Photomaton sont déjà dans vos mairies, préfectures et espaces publics. La mise à niveau biométrique se déploie sur l'existant.</div></div>
+    </div>
+    <div class="upanel" id="tab3">
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div><div class="uf-title">Brique d'enrôlement EUDI Wallet</div></div><div class="uf-body">Premier réseau physique d'enrôlement compatible avec le cadre eIDAS 2. Pont entre identité physique et portefeuille d'identité numérique européen.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20"/></svg></div><div class="uf-title">Scalabilité continentale</div></div><div class="uf-body">Présence multi-pays, architecture standardisée, processus d'interopérabilité documentés. Capacité à déployer des programmes nationaux en parallèle.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div class="uf-title">Acteur structurant européen</div></div><div class="uf-body">Co-construction avec les groupes de travail ICAO, CEN, ISO. Contribution active à la définition des standards de l'identité numérique de demain.</div></div>
+      <div class="uf"><div class="uf-head"><div class="uf-icon"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg></div><div class="uf-title">Interopérabilité by design</div></div><div class="uf-body">Connecteurs vers les principaux frameworks européens d'identité. Architecture ouverte permettant l'intégration sans effet de verrouillage.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITÉ NUMÉRIQUE -->
+<section class="digital" id="digital">
+  <div class="digital-inner">
+    <div>
+      <div class="sec-tag">Pont physique &amp; numérique</div>
+      <h2 class="sec-h">Le pont entre identité physique<br/>et identité numérique</h2>
+      <p class="digital-body">L'avenir de l'identité repose sur des systèmes numériques sécurisés. ME Group joue un rôle clé dans cet écosystème en <strong>garantissant une capture fiable à la source</strong> — condition essentielle de toute identité numérique de confiance.</p>
+      <div class="digital-key"><em>Sans capture fiable, pas d'identité numérique fiable.</em></div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn-orange" onclick="om('contact')">Parler à notre équipe gouvernementale</button>
+        <button class="btn-ghost" onclick="om('docs')">Note EUDI Wallet →</button>
+      </div>
+    </div>
+    <div class="dv-flow">
+      <div class="dv-node"><div class="dv-dot"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><div class="dv-label">Enrôlement physique</div><div class="dv-val">Citoyen au kiosque ME Group</div></div></div>
+      <div class="dv-arrow">↓</div>
+      <div class="dv-node"><div class="dv-dot"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="dv-label">Capture KIS CAM</div><div class="dv-val">Donnée biométrique certifiée ICAO</div></div></div>
+      <div class="dv-arrow">↓</div>
+      <div class="dv-node"><div class="dv-dot"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div><div class="dv-label">Transmission sécurisée</div><div class="dv-val">Chiffrée · Tracée · Souveraine</div></div></div>
+      <div class="dv-arrow">↓</div>
+      <div class="dv-node"><div class="dv-dot"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><div><div class="dv-label">Émission de l'identité numérique</div><div class="dv-val">EUDI Wallet · eIDAS 2 · 2026</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI ME GROUP -->
+<section class="why" id="why">
+  <div class="sec-inner">
+    <div class="sec-tag">Pourquoi ME Group</div>
+    <h2 class="sec-h">Pourquoi les gouvernements<br/><em>font confiance à ME Group</em></h2>
+    <div class="why-grid">
+      <div class="wi"><div class="wi-num">01</div><div><div class="wi-title">Infrastructure déjà déployée à grande échelle</div><div class="wi-body">30 000+ dispositifs actifs dans le monde. Pas un projet futur — une solution opérationnelle sur laquelle les gouvernements s'appuient aujourd'hui.</div></div></div>
+      <div class="wi"><div class="wi-num">02</div><div><div class="wi-title">Maîtrise complète hardware + software</div><div class="wi-body">Du capteur KIS CAM à la transmission — chaque composant conçu, contrôlé et certifié par ME Group.</div></div></div>
+      <div class="wi"><div class="wi-num">03</div><div><div class="wi-title">Technologies certifiées et éprouvées</div><div class="wi-body">ICAO, ISO 30107 PAD Niveau 3, eIDAS 2. Performances mesurées par des tiers indépendants, pas auto-évaluées.</div></div></div>
+      <div class="wi"><div class="wi-num">04</div><div><div class="wi-title">Expérience citoyen fluide</div><div class="wi-body">Contrôles biométriques transparents pour le citoyen. 98,4 % de conformité ICAO à première capture. Aucune expertise additionnelle requise.</div></div></div>
+      <div class="wi"><div class="wi-num">05</div><div><div class="wi-title">Expertise institutionnelle profonde</div><div class="wi-body">Relations établies de longue date avec les agences d'identité — ANTS (France Titres), préfectures, mairies.</div></div></div>
+      <div class="wi"><div class="wi-num">06</div><div><div class="wi-title">Souveraineté européenne by design</div><div class="wi-body">Aucune dépendance extra-européenne sur la chaîne biométrique. Hébergement souverain, conformité RGPD complète, flux de données auditables.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ILS NOUS FONT CONFIANCE -->
+<section id="trust">
+  <div class="sec-inner">
+    <div class="sec-tag">Ils nous font confiance</div>
+    <h2 class="sec-h">Gouvernements &amp; institutions<br/><em>déjà engagés</em></h2>
+    <div class="trust-layout">
+      <div class="trust-highlight">
+        <div class="th-text"><strong>Une infrastructure déjà approuvée par les agences nationales d'identité.</strong> De la délivrance de titres à l'enrôlement biométrique — ME Group est le partenaire opérationnel des gouvernements en Europe et au-delà.</div>
+        <div class="th-num">20+<br/><span style="font-size:14px;color:rgba(255,255,255,0.4);font-weight:500;letter-spacing:0">pays</span></div>
+      </div>
+      <div>
+        <div class="trust-row-label">Références gouvernementales</div>
+        <div class="trust-logos">
+          <div class="tlogo"><div><div class="tlogo-text">France Titres</div><div class="tlogo-sub">ANTS · Passeports &amp; CNI</div></div></div>
+          <div class="tlogo"><div><div class="tlogo-text">Ministère de l'Intérieur</div><div class="tlogo-sub">France · Délivrance de titres</div></div></div>
+          <div class="tlogo"><div><div class="tlogo-text">Réseau Préfectures</div><div class="tlogo-sub">300+ sites · Déploiement terrain</div></div></div>
+          <div class="tlogo" style="border-style:dashed;opacity:0.5"><div><div class="tlogo-text" style="color:var(--muted)">Votre institution</div><div class="tlogo-sub">Partenaire en devenir</div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="trust-row-label">Certifications &amp; organismes de standardisation</div>
+        <div class="trust-logos">
+          <div class="tlogo"><div><div class="tlogo-text">ICAO</div><div class="tlogo-sub">Doc 9303 · Titres de voyage</div></div></div>
+          <div class="tlogo"><div><div class="tlogo-text">ISO / IEC</div><div class="tlogo-sub">30107 · 29794 · Biométrie</div></div></div>
+          <div class="tlogo"><div><div class="tlogo-text">CEN</div><div class="tlogo-sub">Normalisation européenne</div></div></div>
+          <div class="tlogo"><div><div class="tlogo-text">eIDAS 2</div><div class="tlogo-sub">EUDI Wallet · Cadre européen</div></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="trust-row-label">Présence opérationnelle</div>
+        <div class="tcountries">
+          <div class="tcountry"><span class="tcountry-flag">🇫🇷</span><span class="tcountry-name">France</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇧🇪</span><span class="tcountry-name">Belgique</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇬🇧</span><span class="tcountry-name">Royaume-Uni</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇩🇪</span><span class="tcountry-name">Allemagne</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇪🇸</span><span class="tcountry-name">Espagne</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇮🇪</span><span class="tcountry-name">Irlande</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇯🇵</span><span class="tcountry-name">Japon</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇸🇬</span><span class="tcountry-name">Singapour</span></div>
+          <div class="tcountry"><span class="tcountry-flag">🇰🇷</span><span class="tcountry-name">Corée du Sud</span></div>
+          <div class="tcountry" style="border-style:dashed;opacity:0.6"><span class="tcountry-name" style="color:var(--muted)">+ 11 pays</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHIFFRES -->
+<section class="proof" style="padding:80px 56px">
+  <div class="proof-inner">
+    <div class="proof-band">
+      <div class="pb"><div class="pb-n">30 000<sup>+</sup></div><div class="pb-l">Équipements déployés dans le monde</div></div>
+      <div class="pb"><div class="pb-n">10M<sup>+</sup></div><div class="pb-l">Captures sécurisées par an</div></div>
+      <div class="pb"><div class="pb-n">98,4<sup>%</sup></div><div class="pb-l">Conformité ICAO à 1re capture</div></div>
+      <div class="pb"><div class="pb-n">&lt;0,5<sup>%</sup></div><div class="pb-l">APCER — PAD Niveau 3</div></div>
+    </div>
+    <div class="proof-ref">
+      <div><div class="pr-tag">Référence institutionnelle</div><div class="pr-text">France Titres (ANTS) · Déploiement opérationnel sur le territoire national · Passeports &amp; cartes nationales d'identité</div></div>
+      <button class="btn-white-sm" onclick="om('contact')">Demander le cas d'usage complet →</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="ctafinal">
+  <div class="sec-tag" style="justify-content:center">Déployer avec ME Group</div>
+  <h2>Déployer une infrastructure de capture<br/>biométrique de confiance</h2>
+  <p>Notre équipe institutionnelle est prête à analyser votre contexte et à construire avec vous une réponse adaptée à vos enjeux d'identité — du pilote au déploiement national.</p>
+  <div class="ctafinal-btns">
+    <button class="btn-orange" onclick="om('demo')">Demander une démo</button>
+    <button class="btn-navy" onclick="om('pilot')" style="display:inline-flex;align-items:center;gap:8px"><svg viewBox="0 0 24 24" width="14" height="14" style="stroke:#fff;fill:none;stroke-width:2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Lancer un projet pilote</button>
+    <button class="btn-ghost" style="color:var(--navy);border-color:var(--border)" onclick="om('contact')">Contacter nos experts</button>
+  </div>
+  <div class="ctafinal-links">
+    <a class="cl-link" onclick="om('docs')"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Documentation technique</a>
+    <a class="cl-link" onclick="om('demo')"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>Voir la démo</a>
+    <a class="cl-link" onclick="om('docs')"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/></svg>Conformité &amp; certifications</a>
+  </div>
+  <div class="ctafinal-sig">
+    <p>« ME Group n'est pas un fournisseur de cabines photo.<br/>C'est une infrastructure d'enrôlement biométrique de confiance. »</p>
+    <div class="sig-logos">
+      <svg width="200" height="36" viewBox="0 0 360 66" fill="none">
+        <text x="0" y="46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="40" font-weight="800" fill="#E8511A" letter-spacing="-1">Photomaton</text>
+        <text x="258" y="40" font-family="-apple-system,sans-serif" font-size="10" font-weight="700" fill="#E8511A">®</text>
+        <rect x="278" y="6" width="2.5" height="50" rx="1.25" fill="#009CDD"/>
+        <path d="M288 54V12L306 36L324 12V54" stroke="#1e164e" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M332 12H350M332 33H348M332 54H350" stroke="#1e164e" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <svg width="130" height="26" viewBox="0 0 280 52" fill="none">
+    <text x="0" y="38" font-family="-apple-system,sans-serif" font-size="30" font-weight="800" fill="rgba(255,255,255,0.45)" letter-spacing="-0.5">Photomaton</text>
+    <text x="196" y="32" font-family="-apple-system,sans-serif" font-size="8" font-weight="700" fill="rgba(255,255,255,0.35)">®</text>
+    <rect x="210" y="4" width="2" height="40" rx="1" fill="rgba(0,156,221,0.45)"/>
+    <path d="M218 44V10L230 28L242 10V44" stroke="rgba(255,255,255,0.35)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M248 10H264M248 27H261M248 44H264" stroke="rgba(255,255,255,0.35)" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </svg>
+  <div class="fl">© 2025 ME Group / Photomaton · Infrastructure Biométrique de Confiance</div>
+  <div class="fr"><a>Mentions légales</a><a>Politique de confidentialité</a><a>Contact institutionnel</a></div>
+</footer>
+
+<!-- MODAL -->
+<div class="mo" id="mo" onclick="cmout(event)">
+  <div class="mbox">
+    <button class="mclose" onclick="cm()">✕</button>
+    <h2 id="mt">Demander une démonstration</h2>
+    <p id="md">Notre équipe institutionnelle vous contactera sous 48h.</p>
+    <div class="frow"><div class="fg"><label class="fl2">Prénom</label><input class="fi" placeholder="Jean"/></div><div class="fg"><label class="fl2">Nom</label><input class="fi" placeholder="Dupont"/></div></div>
+    <div class="fg"><label class="fl2">Organisation</label><input class="fi" placeholder="Ministère · Agence · Préfecture…"/></div>
+    <div class="fg"><label class="fl2">Fonction</label><input class="fi" placeholder="Directeur SI · RSSI · Responsable projets…"/></div>
+    <div class="fg"><label class="fl2">Email institutionnel</label><input class="fi" type="email" placeholder="jean.dupont@interieur.gouv.fr"/></div>
+    <div class="fg" id="mmg"><label class="fl2">Contexte &amp; enjeux</label><textarea class="ft" placeholder="Décrivez brièvement votre projet ou vos questions…"></textarea></div>
+    <button class="fsub" id="msub">Envoyer la demande</button>
+    <div class="fnote">Données traitées conformément au RGPD — utilisées uniquement pour le traitement de votre demande.</div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
