@@ -309,7 +309,7 @@ footer{padding:26px 56px;background:var(--navy);display:flex;align-items:center;
   .hv-panel{padding:16px}
   .hv-scan-area{height:160px}
   .hv-header{font-size:10px}
-  .hero h1{font-size:clamp(28px,8vw,36px);letter-spacing:-1px}
+  .hero h1{font-size:clamp(26px,7vw,34px);letter-spacing:-1px;line-height:1.2}
   .hero-claim{font-size:15px;margin-bottom:20px}
   .hero-sub{font-size:15px;margin-bottom:28px}
   .hero-eyebrow{font-size:10px;padding:4px 10px;margin-bottom:20px}
