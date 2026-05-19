@@ -2,7 +2,7 @@
 .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--orange),var(--cyan));z-index:1000;transition:width .08s linear}
 
 /* ── Hero layout ── */
-.hero-inner{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:2;padding:140px 56px 0}
+.hero-inner{flex:1;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;max-width:1400px;margin:0 auto;width:100%;position:relative;z-index:2;padding:130px 64px 0}
 .hero-orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .hero-orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:orb-float 8s ease-in-out infinite}
 .hero-orb-1{width:320px;height:320px;background:rgba(0,156,221,.18);top:10%;right:15%;animation-delay:0s}
@@ -12,15 +12,15 @@
 
 /* Hero visual panel */
 .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:420px}
-.hv-panel{width:100%;max-width:400px;background:rgba(255,255,255,.04);border:1px solid rgba(0,156,221,.22);border-radius:16px;padding:20px;backdrop-filter:blur(12px);box-shadow:0 24px 80px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.04) inset;animation:hv-enter 1s var(--ease) both}
+.hv-panel{width:100%;max-width:440px;background:rgba(255,255,255,.04);border:1px solid rgba(232,81,26,0.22);border-radius:16px;padding:20px;backdrop-filter:blur(12px);box-shadow:0 24px 80px rgba(0,0,0,.35),0 0 0 1px rgba(232,81,26,0.06) inset;animation:hv-enter 1s var(--ease) both}
 @keyframes hv-enter{from{opacity:0;transform:translateY(24px) scale(.96)}to{opacity:1;transform:none}}
-.hv-header{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.hv-header{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;color:rgba(232,81,26,0.75);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
 .hv-dot-live{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:blink 2s infinite;box-shadow:0 0 8px rgba(34,197,94,.6)}
 .hv-scan-area{position:relative;height:200px;background:rgba(0,156,221,.06);border:1px solid rgba(0,156,221,.15);border-radius:12px;overflow:hidden;margin-bottom:14px}
 .hv-face{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
-.hv-scan-line{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);animation:hv-scan 2.8s ease-in-out infinite;box-shadow:0 0 12px rgba(0,156,221,.5)}
+.hv-scan-line{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--orange),var(--cyan),transparent);animation:hv-scan 2.8s ease-in-out infinite;box-shadow:0 0 12px rgba(232,81,26,0.35)}
 @keyframes hv-scan{0%,100%{top:18%;opacity:.3}50%{top:78%;opacity:1}}
-.hv-corner{position:absolute;width:18px;height:18px;border-color:var(--cyan);border-style:solid;opacity:.7}
+.hv-corner{position:absolute;width:18px;height:18px;border-color:var(--orange);border-style:solid;opacity:.75}
 .hv-corner-tl{top:12px;left:12px;border-width:2px 0 0 2px}
 .hv-corner-tr{top:12px;right:12px;border-width:2px 2px 0 0}
 .hv-corner-bl{bottom:12px;left:12px;border-width:0 0 2px 2px}
@@ -33,10 +33,10 @@
 .hv-pipeline{display:flex;align-items:center;gap:6px;padding:10px 12px;background:rgba(0,156,221,.08);border-radius:8px;border:1px solid rgba(0,156,221,.15)}
 .hv-node{width:28px;height:28px;border-radius:50%;background:rgba(0,156,221,.15);border:1px solid rgba(0,156,221,.3);display:grid;place-items:center;flex-shrink:0}
 .hv-node svg{width:13px;height:13px;stroke:var(--cyan);fill:none;stroke-width:2}
-.hv-pipe-line{flex:1;height:2px;background:linear-gradient(90deg,var(--cyan),rgba(0,156,221,.2));position:relative;overflow:hidden}
+.hv-pipe-line{flex:1;height:2px;background:linear-gradient(90deg,var(--orange),rgba(0,156,221,.2));position:relative;overflow:hidden}
 .hv-pipe-line::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,#fff,transparent);animation:pipe-flow 2s linear infinite;opacity:.4}
 @keyframes pipe-flow{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
-.hv-float{position:absolute;padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(0,156,221,.25);border-radius:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,.55);letter-spacing:.5px;animation:float-badge 4s ease-in-out infinite}
+.hv-float{position:absolute;padding:6px 12px;background:rgba(255,255,255,.06);border:1px solid rgba(232,81,26,0.28);border-radius:20px;font-size:10px;font-weight:700;color:rgba(255,255,255,.62);letter-spacing:.5px;animation:float-badge 4s ease-in-out infinite}
 .hv-float-1{top:8%;right:-4%;animation-delay:0s}
 .hv-float-2{bottom:18%;left:-6%;animation-delay:-1.5s}
 .hv-float-3{top:42%;right:-8%;animation-delay:-2.5s}
@@ -47,7 +47,7 @@
 .ticker-inner{display:flex;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .ticker-track{display:flex;gap:48px;animation:ticker 28s linear infinite;white-space:nowrap}
 .ticker-item{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:600;color:rgba(255,255,255,.45);letter-spacing:.3px}
-.ticker-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--cyan);opacity:.6}
+.ticker-item::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--orange);opacity:.7}
 @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* Scroll reveal */
@@ -65,8 +65,8 @@
 .wave-divider svg{display:block;width:100%;height:100%}
 
 /* Nav active + mobile */
-.nlinks a.active{color:var(--cyan)!important;font-weight:600}
-nav.scrolled .nlinks a.active{color:var(--cyan)!important}
+.nlinks a.active{color:var(--orange)!important;font-weight:600}
+nav.scrolled .nlinks a.active{color:var(--orange)!important}
 .nav-toggle{display:none;width:38px;height:38px;border:none;background:rgba(255,255,255,.08);border-radius:8px;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0;transition:background .2s}
 .nav-toggle span{display:block;width:18px;height:2px;background:#fff;border-radius:1px;transition:transform .25s,opacity .25s}
 nav.scrolled .nav-toggle{background:var(--off)}
@@ -78,13 +78,13 @@ nav.scrolled .nav-toggle span{background:var(--navy)}
 .nav-drawer.open{transform:translateY(0);opacity:1;pointer-events:auto}
 .nav-drawer a{display:block;padding:14px 0;font-size:15px;font-weight:600;color:var(--navy);text-decoration:none;border-bottom:1px solid var(--border);cursor:pointer}
 .nav-drawer a:last-child{border-bottom:none}
-.nav-drawer a.active{color:var(--cyan)}
+.nav-drawer a.active{color:var(--orange)}
 .nav-drawer-cta{width:100%;margin-top:16px}
 
 /* Back to top */
 .back-top{position:fixed;bottom:28px;right:28px;width:44px;height:44px;border-radius:10px;background:var(--navy);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 20px rgba(30,22,78,.25);opacity:0;transform:translateY(12px);transition:opacity .3s,transform .3s,background .2s;z-index:800;pointer-events:none}
 .back-top.vis{opacity:1;transform:none;pointer-events:auto}
-.back-top:hover{background:var(--cyan)}
+.back-top:hover{background:var(--orange)}
 .back-top svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.5}
 
 /* Enhanced cards shadow on hover */
@@ -95,7 +95,7 @@ nav.scrolled .nav-toggle span{background:var(--navy)}
 .trust-strip{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;overflow:hidden}
 .trust-strip-inner{display:flex;animation:ticker 35s linear infinite;gap:56px;width:max-content}
 .trust-strip-item{font-size:13px;font-weight:700;color:var(--navy);opacity:.55;white-space:nowrap;display:flex;align-items:center;gap:10px}
-.trust-strip-item::after{content:'◆';font-size:6px;color:var(--cyan);opacity:.5}
+.trust-strip-item::after{content:'◆';font-size:6px;color:var(--orange);opacity:.5}
 
 /* CTA final bg pattern */
 .ctafinal{position:relative;overflow:hidden}
