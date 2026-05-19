@@ -48,15 +48,23 @@ document.querySelectorAll('[data-nav], .nav-drawer a[href^="#"]').forEach((link)
 const navSections = ['paradigm', 'process', 'kiscam', 'certifications', 'usages'];
 
 function updateActiveNav() {
+  const offset = (nav?.offsetHeight ?? 66) + 24;
+  const scrollPos = window.scrollY + offset;
   let current = navSections[0];
+
   for (const id of navSections) {
     const section = document.getElementById(id);
-    if (section && section.getBoundingClientRect().top <= 120) current = id;
+    if (section && scrollPos >= section.offsetTop) {
+      current = id;
+    }
   }
+
   document.querySelectorAll('[data-nav]').forEach((a) => {
     a.classList.toggle('active', a.dataset.nav === current);
   });
 }
+
+window.addEventListener('resize', updateActiveNav);
 
 const revealObs = new IntersectionObserver(
   (entries) => {
